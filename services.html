@@ -11,7 +11,8 @@
     />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Hammels Plumbing | Services</title>
+
+    <title>Hammel's Plumbing | Services</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -34,14 +35,16 @@
       <h2 class="lg text-center text-light my-2">Services we provide</h2>
       <div class="container flex">
         <div class="card">
-          <a href="" data-toggle="modal" data-target="#myModal">
+          <button class="btn2" data-target="#modal1">
             <h4>Hot Water Systems</h4>
-            <img src="" alt=""
-          /></a>
+            <img src="" alt="HWS" />
+          </button>
         </div>
         <div class="card">
-          <h4>Roof and Gutter</h4>
-          <img src="" alt="" />
+          <button class="btn2" data-target="#modal2">
+            <h4>Roof and Gutter</h4>
+            <img src="" alt="" />
+          </button>
         </div>
         <div class="card">
           <h4>Leak Location</h4>
@@ -64,8 +67,32 @@
           <img src="" alt="" />
         </div>
       </div>
+
+      <div class="modal" id="modal1">
+        <div class="modal-header">
+          <div class="title">HWS</div>
+          <button class="btn2 modal-btn" data-target="#modal1">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Please do this blah blah</p>
+          <p>this</p>
+          <p>and this</p>
+        </div>
+      </div>
+
+      <div class="modal" id="modal2">
+        <div class="modal-header">
+          <div class="title">HWS</div>
+          <button class="btn2 modal-btn" data-target="#modal2">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Please do this blah blah</p>
+          <p>this</p>
+          <p>and this is the second modal</p>
+        </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
       <div class="container grid grid-3">
@@ -86,5 +113,8 @@
         </div>
       </div>
     </footer>
+
+    <div id="overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
